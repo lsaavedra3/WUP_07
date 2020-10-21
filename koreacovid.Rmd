@@ -23,6 +23,8 @@ Some of the data was uncoded for sex - sex must be just male or female
 state of a patient must be died or alive - we adjust that as well   
   
 # Question 1 - Is dying independent of sex
+$H_0$:There is no correlation between Dying from Covid-19 is and sex.  
+$H_A$:There is a correlation between Dying from Covid 19 and sex.  
 
 
 
@@ -50,7 +52,8 @@ barchartGC(~result + Sex,data=kRdata, main ="Frequency Bar Chart")
 barchartGC(~result + Sex,data=kRdata, type="percent", main ="percent Bar Chart")
 ```
 
-According to this bar chart, the percentage of females that contracted the virus is higher than males, and the percentage of females dying is less. The percentage of males that contracted the virus are less than females, but the percentage of males dying of the virus is higher.
+According to this bar chart, the percentage of females that contracted the virus is higher than males, and the percentage of females dying is less than males.    
+The percentage of males that contracted the virus are less than females, but the percentage of males dying of the virus is higher than females.  
   
 ## Numerical results
 ```{r}
@@ -67,8 +70,15 @@ Out of all the males 97% are alive and 3% are dead.
 
 ## Inferential results 
 
-
-
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+The odds of dying if you're a male 44/1411  
+The odd of dying if you're a female 25/1831  
+The odd ratio is (44/1411)(25/1831)    
+The odds ratio is 2.3 to 1  
 
 ## Conclusions
-
+The P value is 0.0012 which is less than 0.05, therefore we REJECT the null hypothesis, there IS a correlation between dying of Covid-19 and sex.  
