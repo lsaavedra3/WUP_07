@@ -1,7 +1,7 @@
 ---
 title: "covid 19"
-author: "Dr K"
-date: "5/2/2020"
+author: "Lelainy Saavedra"
+date: "10/20/2020"
 output:
   html_document: default
   pdf_document: default
@@ -46,9 +46,11 @@ barchartGC(~result + Sex,data=kRdata, main ="Frequency Bar Chart")
 ### this bar chart is displaying in total frequency terms our data.  Clearly there are a lot less dead people than alive people as is reflected by the sizes of the bars in the display.  
 
 
+```{r}
+barchartGC(~result + Sex,data=kRdata, type="percent", main ="percent Bar Chart")
+```
 
-
-
+According to this bar chart, the percentage of females that contracted the virus is higher than males, and the percentage of females dying is less. The percentage of males that contracted the virus are less than females, but the percentage of males dying of the virus is higher.
   
 ## Numerical results
 
