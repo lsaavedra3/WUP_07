@@ -53,6 +53,16 @@ barchartGC(~result + Sex,data=kRdata, type="percent", main ="percent Bar Chart")
 According to this bar chart, the percentage of females that contracted the virus is higher than males, and the percentage of females dying is less. The percentage of males that contracted the virus are less than females, but the percentage of males dying of the virus is higher.
   
 ## Numerical results
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+On this table it shows that the total population that is alive 56% are female and 44% are male.  
+Out of the total population that is dead 36% are female and 64% are male.  
+
+on the column percent out of all the females 98.7% are alive and 1.4% are dead.
+Out of all the males 97% are alive and 3% are dead.  
 
 
 ## Inferential results 
