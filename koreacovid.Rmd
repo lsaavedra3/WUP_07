@@ -81,4 +81,4 @@ The odd ratio is (44/1411)(25/1831)
 The odds ratio is 2.3 to 1  
 
 ## Conclusions
-The P value is 0.0012 which is less than 0.05, therefore we REJECT the null hypothesis, there IS a correlation between dying of Covid-19 and sex.  
+The P value is 0.0012 which is less than 0.05, therefore we REJECT the null hypothesis, there IS a correlation between dying of Covid-19 and sex. More men than women die.
